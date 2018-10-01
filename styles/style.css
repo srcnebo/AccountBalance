@@ -1,0 +1,14 @@
+.myInputs {
+  padding: 0 5px 0 5px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 3rem !important;
+}
+
+.wrapper {
+  max-width: 1140px !important;
+  margin: auto;
+  padding: 2rem;
+}

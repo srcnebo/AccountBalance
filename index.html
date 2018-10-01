@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Account Balance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<!-- Account Balance Tracker
+In this application, you will develop an application which shows an account balance. 
+There will be three categories: 
+Income
+Expense 
+Balance
+
+Balance is the sum of all expenses subtracted from the sum of all incomes. The input fields take 
+transaction description, transaction amount and transaction type (income or expense).
+All the required features of the application are shown in the wireframe(mockup) below.  -->
+
+
+<body>
+
+  <div class="wrapper">
+    <div class="balance-sheet">
+      <div>
+        <h3>Account Balance</h3>
+      </div>
+
+      <!-- Entry fields for new information -->
+      <div class="input-fields row">
+        <input type="text" class="myInputs col s12 m4" placeholder="Enter description" id="desc">
+        <input type="number" class="myInputs col s12 m4" placeholder="Enter amount" id="price">
+        <select name="amount" id="drop-down" class="myInputs browser-default col s12 m2">
+          <option value="" disabled selected>Entry Type</option>
+          <option value="Income">Income</option>
+          <option value="Expense">Expense</option>
+        </select>
+        <button class="myInputs btn col s12 m2">Add</button>
+      </div>
+
+      <!-- Tables for display of information -->
+      <div class="display-info">
+        <div class="row">
+          <div id="income-div" class="col s12 m9 l6">
+            <table>
+              <!-- Income table -->
+              <tr>
+                <th>
+                  Income
+                </th>
+              </tr>
+              <tbody id="income-table">
+
+              </tbody>
+            </table>
+          </div>
+          <div id="expense-div" class="col s12 m9 l6">
+            <table>
+              <!-- Expense Table -->
+              <tr>
+                <th>
+                  Expenses
+                </th>
+              </tr>
+              <tbody id="expense-table">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="balance row">
+          <div class="balance-div col s12 m6  offset-m3">
+            <table>
+              <tr>
+                <th>Balance</th>
+              </tr>
+              <tbody id="balance-table">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="balance-div">
+          <!-- Balance section -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./script.css/script.js""></script>
+</body>
+</html>
